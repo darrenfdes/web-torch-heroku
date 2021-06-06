@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, send_from_directory, redirect
 import os
 from PIL import Image
 from numpy.random import randint
-from matplotlib import pyplot
+# from matplotlib import pyplot
 import io
 import numpy as np
 from os import listdir
