@@ -67,8 +67,7 @@ def image_loader(loader, path):
 G_AB = GeneratorResNet(input_shape, n_residual_blocks)
 # if cuda:
 #     G_AB = G_AB.cuda()
-
-G_AB.load_state_dict(torch.load("static/models/saved_models/G_AB.pth"))
+G_AB.load_state_dict(torch.load("static/models/saved_models/G_AB.pth", map_location=torch.device('cpu')))
 G_AB.eval()
 
 print("here in app.py")
